@@ -13,8 +13,9 @@
 # limitations under the License.
 
 """When building as a dynamic .so provide a hook to load it at runtime."""
-import tensorflow.compat.v1 as tf
+from tensorflow.python.framework import load_library
+from tensorflow.python.platform import resource_loader
 
 # TODO: Store the returned object so application code can use it.
-tf.load_op_library(
-    'multidim_image_augmentation/python/ops/_augmentation_ops.so')
+load_library.load_op_library(
+    resource_loader.get_path_to_datafile('python/ops/_augmentation_ops.so'))
