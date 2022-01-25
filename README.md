@@ -66,7 +66,6 @@ docker run -v LOCAL_PATH:CONTAINER_PATH -it tensorflow/tensorflow:custom-op-ubun
 One time setup:
 
 ```shell
-
 pip3.7 install "numpy<1.19.0"
 pip3.7 install keras_preprocessing --no-deps
 
@@ -78,7 +77,7 @@ bazel version
 
 TF_VERSION=1.15.2
 wget https://github.com/tensorflow/tensorflow/archive/v$TF_VERSION.tar.gz
-tar -xzf $TF_VERSION.tar.gz
+tar -xzf v$TF_VERSION.tar.gz
 
 wget https://github.com/marcwilson-g/multidim-image-augmentation/archive/refs/heads/pip_build.zip
 unzip pip_build.zip
