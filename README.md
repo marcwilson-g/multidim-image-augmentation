@@ -66,6 +66,7 @@ docker run -v LOCAL_PATH:CONTAINER_PATH -it tensorflow/tensorflow:custom-op-ubun
 One time setup:
 
 ```shell
+
 pip3.7 install "numpy<1.19.0"
 pip3.7 install keras_preprocessing --no-deps
 
