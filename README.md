@@ -67,7 +67,7 @@ One time setup:
 
 ```shell
 
-pip3.7 install "numpy<1.19.0"
+pip3.7 install "numpy<1.19.0" wheel
 pip3.7 install keras_preprocessing --no-deps
 
 BAZEL_VERSION=0.26.1
